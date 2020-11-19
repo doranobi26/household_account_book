@@ -1,13 +1,13 @@
 <h2>収入科目の詳細</h2>
-<%= link_to "編集", edit_icome_path(@income.id)%>
+<%= link_to "編集", edit_income_path(@income.id)%>
 <%= link_to "収入科目一覧へ戻る", incomes_path, method: :get %>
 <table>
   <tr>
     <th>名称</th>
-    <td><%= @income.name %></td>
+    <td><%= @income.subject %></td>
   </tr>
   <tr>
     <th>説明</th>
-    <td><%= @income.description %></td>
+    <td><%= @income.remark %></td>
   </tr>
 </table>

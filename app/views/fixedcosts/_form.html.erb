@@ -1,0 +1,11 @@
+<%= link_to "固定費科目一覧", fixedcosts_path, method: :get %>
+<table>
+ <tr>
+   <th><%= form.label :subject, "勘定科目" %></th>
+   <td><%= form.text_field :subject %></td>
+ </tr>
+ <tr>
+  <th><%= form.label :remark, "備考" %></th>
+  <td><%= form.text_field :remark %></td>
+ </tr>
+</table>
