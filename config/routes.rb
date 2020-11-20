@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   resources :incomes
   resources :fixedcosts
   resources :variablecosts
+
+  resources :income_values
+  post "income_values/new(/:name)" => "income_values#new"
+  
 end

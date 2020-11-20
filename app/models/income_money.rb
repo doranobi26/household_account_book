@@ -1,0 +1,2 @@
+class IncomeMoney < ApplicationRecord
+end
